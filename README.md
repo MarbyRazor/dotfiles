@@ -9,6 +9,9 @@ Marby's `.dotfiels` Repository with the following features:
 - NeoVim
 - fzf
 - ripgrep
+- tmux
+- lazygit
+- k9s
 
 # Installation 
 
