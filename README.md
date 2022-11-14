@@ -12,6 +12,7 @@ Marby's `.dotfiels` Repository with the following features:
 - tmux
 - lazygit
 - k9s
+- stow
 
 # Installation 
 
