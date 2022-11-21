@@ -20,7 +20,15 @@ Before you start be sure you will backup your `config` files.
 
 ```sh
 git clone https://github.com/MarbyRazor/dotfiles.git ~/.dotfiles
+```
+
+```sh
 ./install
+```
+
+Add the ZSH Profile to your `~/.zshrc` file
+```sh
+source ~/.zsh_profile
 ```
 
 # Thank You

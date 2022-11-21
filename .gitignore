@@ -42,4 +42,4 @@ luac.out
 java-debug/
 vscode-java-test/
 old
-mynvim/.config/nvim/plugin/packer_compiled.lua
+packer_compiled.lua
