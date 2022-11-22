@@ -8,6 +8,7 @@ local servers = {
 	"jsonls",
 	"yamlls",
 	"terraformls",
+	"dockerls",
 }
 
 local settings = {
