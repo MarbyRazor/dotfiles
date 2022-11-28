@@ -3,6 +3,7 @@ if not status_ok then
   return
 end
 
+
 local status_ok, mason_tool_installer = pcall(require, "mason_tool_installer")
 if not status_ok then
   return
