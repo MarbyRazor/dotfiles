@@ -1,13 +1,16 @@
-require("mason").setup()
+local status_ok, mason = pcall(require, "mason")
+if not status_ok then
+  return
+end
 
-require("null-ls").setup()
+local status_ok, mason_tool_installer = pcall(require, "mason_tool_installer")
+if not status_ok then
+  return
+end
 
-require("mason-null-ls").setup({
-   ensure_installed = { "stylua", "jq" }, 
-   automatic_setup = true,
-})
+mason.setup()
 
-require('mason-tool-installer').setup {
+mason_tool_installer.setup {
 
   -- a list of all tools you want to ensure are installed upon
   -- start; they should be the names Mason uses for each tool
