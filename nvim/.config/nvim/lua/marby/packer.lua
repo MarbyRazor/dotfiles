@@ -30,7 +30,7 @@ return require('packer').startup(function(use)
   -- Snipping Tool
   use({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"})
 
-  -- ToggleTerm
+  -- ToggleTerm - Do I really need this? - test it
   use { "akinsho/toggleterm.nvim" }
 
   -- Color scheme

@@ -1,5 +1,11 @@
-require('lspconfig').yamlls.setup {
+local status_ok, lsp = pcall(require, "lspconfig")
+if not status_ok then
+  return
+end
+
+lsp.yamlls.setup {
   settings = {
+    redhat = { telemetry = { enabled = false } },
     yaml = {
       schemas = {
         ["https://raw.githubusercontent.com/instrumenta/kubernetes-json-schema/master/v1.18.1-standalone-strict/all.json"] = "/*.k8s.yaml",
@@ -8,9 +14,9 @@ require('lspconfig').yamlls.setup {
   }
 }
 
-require'lspconfig'.terraform_lsp.setup{}
+lsp.terraform_lsp.setup{}
 
-require'lspconfig'.sumneko_lua.setup {
+lsp.sumneko_lua.setup {
   settings = {
     Lua = {
       runtime = {
