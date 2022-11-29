@@ -9,10 +9,10 @@ return require('packer').startup(function(use)
 
   -- LSP
   use {
+     "neovim/nvim-lspconfig",
      "williamboman/mason.nvim",
      "jose-elias-alvarez/null-ls.nvim",
      "jayp0521/mason-null-ls.nvim",
-     "WhoIsSethDaniel/mason-tool-installer.nvim"
   }
 
   -- Speed Up Neovim

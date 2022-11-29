@@ -3,14 +3,14 @@ if not status_ok then
   return
 end
 
-
+--[[
 local status_ok, mason_tool_installer = pcall(require, "mason_tool_installer")
 if not status_ok then
   return
 end
-
+--]]
 mason.setup()
-
+--[[
 mason_tool_installer.setup {
 
   -- a list of all tools you want to ensure are installed upon
@@ -53,3 +53,4 @@ mason_tool_installer.setup {
   -- Default: 0
   start_delay = 3000, -- 3 second delay
 }
+--]]
