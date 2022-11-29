@@ -43,3 +43,4 @@ java-debug/
 vscode-java-test/
 old
 packer_compiled.lua
+.luarc.json
