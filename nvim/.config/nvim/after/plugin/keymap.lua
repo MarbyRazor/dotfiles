@@ -4,27 +4,27 @@ local inoremap = require("marby.keymap").inoremap
 --nnoremap("<leader>pv", "<cmd>Ex<CR>")
 
 -- General INSERT MODE
-inoremap("jk","<ESC>")
-
+inoremap("jk", "<ESC>")
+-- nnoremap <leader>q :enew<bar>bd #<CR>
+nnoremap("<leader>q", ":bw<CR>")
 
 -- Telescope
 nnoremap("<leader>ff", function()
-    require('telescope.builtin').find_files()
+	require("telescope.builtin").find_files()
 end)
 
 nnoremap("<leader>fg", function()
-    require('telescope.builtin').live_grep()
+	require("telescope.builtin").live_grep()
 end)
 
 nnoremap("<leader>fb", function()
-    require('telescope.builtin').buffers()
+	require("telescope.builtin").buffers()
 end)
 
 nnoremap("<leader>fh", function()
-    require('telescope.builtin').help_tags()
+	require("telescope.builtin").help_tags()
 end)
 
 -- ToggleTerm
 nnoremap("<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>")
 nnoremap("<leader>gk", "<cmd>lua _K9S_TOGGLE()<CR>")
-

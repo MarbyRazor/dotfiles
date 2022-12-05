@@ -9,7 +9,7 @@ if not status_ok then
 end
 
 mason_null_ls.setup({
-	ensure_installed = { "stylua", "jq", "markdownlint" },
+	ensure_installed = { "stylua", "jq", "markdownlint", "terrafmt", "terraform_fmt" },
 	automatic_setup = true,
 })
 
@@ -30,6 +30,8 @@ local sources = {
 
 	b.formatting.yamlfmt,
 	b.formatting.jq,
+	b.formatting.terraform_fmt,
+	b.formatting.terrafmt, -- Formatting terraform in markdown
 }
 
 null_ls.setup({
