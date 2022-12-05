@@ -24,7 +24,3 @@ end)
 nnoremap("<leader>fh", function()
 	require("telescope.builtin").help_tags()
 end)
-
--- ToggleTerm
-nnoremap("<leader>gg", "<cmd>lua _LAZYGIT_TOGGLE()<CR>")
-nnoremap("<leader>gk", "<cmd>lua _K9S_TOGGLE()<CR>")
