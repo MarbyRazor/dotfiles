@@ -1,5 +1,6 @@
 local nnoremap = require("marby.keymap").nnoremap
 local inoremap = require("marby.keymap").inoremap
+local vnoremap = require("marby.keymap").vnoremap
 
 --nnoremap("<leader>pv", "<cmd>Ex<CR>")
 
@@ -24,3 +25,10 @@ end)
 nnoremap("<leader>fh", function()
 	require("telescope.builtin").help_tags()
 end)
+
+-- Bufferline - Navigate Buffers
+nnoremap("<S-l>", ":bnext<CR>")
+nnoremap("<S-h>", ":bprevious<CR>")
+
+-- Better paste
+vnoremap("p", '"_dP')
