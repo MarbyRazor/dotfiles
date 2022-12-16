@@ -30,5 +30,8 @@ end)
 nnoremap("<S-l>", ":bnext<CR>")
 nnoremap("<S-h>", ":bprevious<CR>")
 
+-- Close buffers
+nnoremap("<S-q>", "<cmd>Bdelete!<CR>")
+
 -- Better paste
 vnoremap("p", '"_dP')

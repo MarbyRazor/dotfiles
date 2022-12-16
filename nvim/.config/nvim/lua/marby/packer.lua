@@ -16,7 +16,7 @@ return require("packer").startup(function(use)
 	})
 
 	-- Speed Up Neovim
-	use("lewis6991/impatient.nvim")
+	use({ "lewis6991/impatient.nvim" })
 
 	-- CMP Stuff
 	use({
@@ -52,6 +52,7 @@ return require("packer").startup(function(use)
 	})
 
 	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "nvim-tree/nvim-web-devicons" })
+	use({ "moll/vim-bbye" })
 
 	use({
 		"nvim-tree/nvim-tree.lua",
@@ -68,4 +69,7 @@ return require("packer").startup(function(use)
 
 	-- Automate closing paranthesis
 	use({ "windwp/nvim-autopairs" })
+
+	-- Comment
+	use({ "numToStr/Comment.nvim" })
 end)
