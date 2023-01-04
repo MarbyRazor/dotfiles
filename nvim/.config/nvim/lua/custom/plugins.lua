@@ -5,4 +5,9 @@ return function(use)
         require("which-key").setup({})
       end
   })
+
+  use({
+		"jose-elias-alvarez/null-ls.nvim",
+		"jayp0521/mason-null-ls.nvim",
+	})
 end
