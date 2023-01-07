@@ -13,6 +13,7 @@ Marby's `.dotfiels` Repository with the following features:
 - lazygit
 - k9s
 - stow
+- xsel (on X11)
 
 # Installation 
 
