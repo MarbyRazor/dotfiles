@@ -1,6 +1,6 @@
 # dotfiles
 
-Marby's `.dotfiels` Repository with the following features:
+Marby's `.dotfiles` Repository with the following features:
 
 - NeoVim as IDE
 
