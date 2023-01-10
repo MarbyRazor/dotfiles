@@ -48,4 +48,4 @@ source ~/.zsh_profile
 
 - [LunarVim Basic IDE](https://github.com/LunarVim/nvim-basic-ide) 
 - [tmux-sessionizer](https://github.com/edr3x/tmux-sessionizer) 
-- ThePrimeagen
+- [ThePrimeagen](https://github.com/ThePrimeagen/)
