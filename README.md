@@ -23,6 +23,12 @@ Next you can clone the repo.
 ```sh
 git clone https://github.com/MarbyRazor/dotfiles.git ~/.dotfiles
 ```
+> The kickstart init.lua will be untouched. For customisation we will use separat files.
+Get the latest kickstart init lua
+
+```sh
+curl ... ~/.dotfiles/nvim/.config/nvim/init.lua
+```
 
 Todo: 
 - Renaming lua folder to custom name

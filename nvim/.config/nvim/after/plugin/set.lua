@@ -1,4 +1,5 @@
-vim.opt.guicursor = ""
+
+-- vimm.opt.guicursor = ""
 
 vim.opt.errorbells = false
 
@@ -32,6 +33,4 @@ vim.opt.signcolumn = "yes"
 
 -- Give more space for displaying messages.
 vim.opt.cmdheight = 1
-
-vim.g.mapleader = " "
 
