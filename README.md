@@ -21,7 +21,7 @@ Before you start be sure you will backup your `config` files.
 
 Next you can clone the repo.
 ```sh
-git clone https://github.com/MarbyRazor/dotfiles.git ~/.dotfiles
+git clone --recurse-submodules https://github.com/MarbyRazor/dotfiles.git ~/.dotfiles
 ```
 > The kickstart init.lua will be untouched. For customisation we will use separat files.
 Get the latest kickstart init lua
