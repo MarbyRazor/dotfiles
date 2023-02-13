@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -euo pipefail
+
+echo "$(date '+%Y-%m-%d') $1" >> "~/todo"
+
