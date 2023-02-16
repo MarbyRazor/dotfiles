@@ -64,10 +64,10 @@ alias fn='find . -name "*'
 alias ff='find . -name "*.'
 alias sz='source ~/.zshrc'
 alias rp='realpath'
-alias CC='$(fc -l -n -1) | clipcopy'
+alias CC='$(fc -l -n -1) | xclip -sel clip'
 
 # executables
-ialias curl='curl --silent --show-error'
+# ialias curl='curl --silent --show-error'
 
 # git
 alias gs='git show'
@@ -188,7 +188,7 @@ alias dkclean='docker ps -q -a -f status=exited | xargs -r docker rm && docker i
 # unix
 alias -g md='mkdir -p'
 alias -g wh='which'
-ialias -g grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+# ialias -g grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias -g A1="| awk '{print \$1}'"
 alias -g L='| less'
 alias -g H='| head'
@@ -197,15 +197,15 @@ alias -g G='| grep'
 alias -g Gi='| grep -i'
 alias -g GH='| grep HTTP'
 alias -g X='| xargs -I1'
-alias -g C='| clipcopy'
+alias -g C='| xclip -sel clip'
 alias -g Fj='| jq .'
 alias -g Fy='| yq .'
 alias -g Fx='| xmllint --format -'
 alias -g V='| vim -'
 
 # executables
-ialias -g l='exa -al'
-ialias -g cat='bat --plain --wrap character'
+# ialias -g l='exa -al'
+# ialias -g cat='bat --plain --wrap character'
 
 # arguments
 alias -g cpjson="-XPOST -H 'Content-Type: application/json' -d '{}'"
