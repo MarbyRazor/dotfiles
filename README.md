@@ -23,7 +23,7 @@ xargs -a ~.dotfiles/software.list sudo apt-get install
 For Arch Linux and its derivates:
 
 ```sh
-xargs -a ~.dotfiles/software.list sudo pacman -Ss
+xargs -a ~.dotfiles/software.list sudo pacman -S
 ```
 
 > The kickstart init.lua will be untouched. For customisation we will use separat files.
