@@ -5,6 +5,7 @@ export DOTFILES=$HOME/.dotfiles
 export EDITOR="nvim"
 
 source $HOME/.autocomplete.zsh
+source $HOME/.load-k8s-configs.zsh
 
 # -----------------------------------------------------------------------------
 # Kubernetes
@@ -49,4 +50,3 @@ export FZF_DEFAULT_OPS="--extended"
 PATH="$PATH":"$HOME/.local/scripts/"
 bindkey -s "^f" "tmux-sessionizer\n"
 
-# source $HOME/.aliases
