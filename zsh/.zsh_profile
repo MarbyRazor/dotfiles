@@ -5,7 +5,7 @@ export DOTFILES=$HOME/.dotfiles
 export EDITOR="nvim"
 
 source $HOME/.autocomplete.zsh
-source $HOME/.load-k8s-configs.zsh
+source $DOTFILES/bin/.local/scripts/load-k8s-configs
 
 # -----------------------------------------------------------------------------
 # Kubernetes
