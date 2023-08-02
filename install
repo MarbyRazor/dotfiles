@@ -1,15 +1,14 @@
 #!/usr/bin/env zsh
-# I am using zsh instead of bash.  I was having some troubles using bash with
-# arrays.  Didn't want to investigate, so I just did zsh
-pushd $DOTFILES
-for folder in $(echo $STOW_FOLDERS | sed "s/,/ /g")
-do
-    echo "stow $folder"
-    stow -D $folder
-    stow $folder
-done
-popd
 
-./stow
-popd
+# NVIM 
+ln -s $(pwd)/nvim/.config/nvim ~/.config/nvim
 
+# TMUX
+ln -s $(pwd)/tmux/.tmux.conf ~/.tmux.conf
+
+# ZSH
+ln -s $(pwd)/zsh/.aliases ~/.aliases
+ln -s $(pwd)/zsh/.autocomplete.zsh ~/.autocomplete.zsh
+ln -s $(pwd)/zsh/.zsh_profile ~/.zsh_profile
+
+ln -s $(pwd)/bin/.local/scripts ~/.local/scripts
