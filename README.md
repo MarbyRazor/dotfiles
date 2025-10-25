@@ -6,11 +6,9 @@ Marby's `.dotfiles` Repository
 
 Before you start be sure you will backup your `config` files.
 
-Next you can clone the repo.
+If not, the `install.sh` script will do it for you!
 
-```sh
-git clone --recurse-submodules https://github.com/MarbyRazor/dotfiles.git ~/.dotfiles
-```
+Next you can clone this repo.
 
 Install the required software:
 
@@ -26,22 +24,8 @@ For Arch Linux and its derivates:
 xargs -a ~.dotfiles/software.list sudo pacman -S
 ```
 
-> The kickstart init.lua will be untouched. For customisation we will use separat files.
-> Get the latest kickstart init lua
-
-```sh
-curl ... ~/.dotfiles/nvim/.config/nvim/init.lua
-```
-
 Install (stowing) the configs
 
 ```sh
-./install
+./install.sh
 ```
-
-# Thank You
-
-- [LunarVim Basic IDE](https://github.com/LunarVim/nvim-basic-ide)
-- [tmux-sessionizer](https://github.com/edr3x/tmux-sessionizer)
-- [ThePrimeagen](https://github.com/ThePrimeagen/)
-- [SDaschner](https://github.com/sdaschner/dotfiles)
