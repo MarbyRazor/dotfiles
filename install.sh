@@ -1,4 +1,4 @@
-#
+#!/usr/bin/env bash
 
 # Idempotent dotfiles installer for macOS and Linux.
 # Creates symlinks for all config files and scripts safely and recursively.
