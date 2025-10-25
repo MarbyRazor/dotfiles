@@ -14,7 +14,6 @@ vim.opt.undofile = true
 vim.opt.signcolumn = "yes"
 
 vim.pack.add({
-	-- { src = "https://github.com/stevearc/oil.nvim" },
 	{ src = "https://github.com/echasnovski/mini.nvim" },
 	{ src = "https://github.com/nvim-treesitter/nvim-treesitter", version = "main" },
 	{ src = "https://github.com/chomosuke/typst-preview.nvim" },
@@ -33,7 +32,6 @@ require "mini.pairs".setup()
 require "mini.comment".setup()
 require "mini.surround".setup()
 require "mini.extra".setup()
--- require "oil".setup()
 
 -- LSP
 vim.lsp.enable(
